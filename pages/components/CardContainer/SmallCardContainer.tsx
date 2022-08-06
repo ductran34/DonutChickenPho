@@ -1,4 +1,12 @@
 import React from 'react'
+import styled from 'styled-components';
+
+const Card = styled.div`
+  background-color: #1f2631;
+  border: 2px solid #fb4959;
+  height: 15rem;
+  width:  12rem;
+`;
 
 function SmallCardContainer() {
   return (
@@ -8,13 +16,14 @@ function SmallCardContainer() {
             Donuts
         </div>
         {/*======== List Item of Container ============ */}
-        <div className="h-full w-full bg-pink-500 grid gap-8 grid-cols-auto-fill ">
-            <div className='bg-pink-300 h-[10rem]'>ddddddd</div>
-            <div className='bg-pink-300'>ddddddd</div>
-            <div className='bg-pink-300'>ddddddd</div>
-            <div className='bg-pink-300'>ddddddd</div>
-            <div className='bg-pink-300'>ddddddd</div>
-            <div className='bg-pink-300'>ddddddd</div>
+        <div className="h-full w-full px-[5rem] bg-pink-500 grid gap-4 grid-cols-4 place-items-center">
+                <Card>s</Card>
+                <Card>s</Card>
+                <Card>s</Card>
+                <Card>s</Card>
+                <Card>s</Card>
+                <Card>s</Card>
+                <Card>s</Card>
         </div>
     </div>
   )
