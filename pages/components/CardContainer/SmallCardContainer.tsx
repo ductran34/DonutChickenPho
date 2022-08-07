@@ -57,7 +57,7 @@ function LargeCard(){
             <div className="text-2xl w-2/6">$6.29</div>
           </div>
       </div>
-      {/* <div className="z-0 absolute h-full w-full rounded-lg top-2 left-2 bg-pink-400"></div> */}
+      <div className="absolute h-full w-full rounded-lg top-2 left-2 bg-[#F5F5F5] z-[-100]"></div>
     </div>
   )
 }
@@ -71,7 +71,7 @@ function SmallCard() {
         <div className="bg-[#EF4852] px-4 rounded-full text-white">Classic</div>
         <div>$3.00</div>
       </div>
-      {/* <div className="z-0 absolute h-full w-full rounded-lg top-2 left-2 bg-pink-400"></div> */}
+      <div className="absolute h-full w-full rounded-lg top-2 left-2 bg-[#F5F5F5] z-[-100]"></div>
     </div>
   );
 }
