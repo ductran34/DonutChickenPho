@@ -1,8 +1,8 @@
 import React, { Dispatch, SetStateAction } from 'react'
-import icons_1 from "../../../data/assert/icons/icons_1.png";
-import icons_2 from "../../../data/assert/icons/icons_2.png";
-import icons_3 from "../../../data/assert/icons/icons_3.png";
-import icons_4 from "../../../data/assert/icons/icons_4.png";
+import icons_1 from "../../../data/icons/icon_1.png";
+import icons_2 from "../../../data/icons/icon_2.png";
+import icons_3 from "../../../data/icons/icon_3.png";
+import icons_4 from "../../../data/icons/icon_4.png";
 import Icon from '../Icon';
 function CategoryBarContainer({selectedCategory, setSelectedCategory} : {selectedCategory? : string, setSelectedCategory: Dispatch<SetStateAction<string>>}) {
     

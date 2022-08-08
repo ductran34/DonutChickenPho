@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
-import donut from "../../../data/assert/donut.png";
-import chicken from "../../../data/assert/chicken.png";
+import donut from "../../../data/donut.png";
+import chicken from "../../../data/chicken.png";
 import {data} from "../../../data/data"
 import { IProduct, ProductProps } from "../Types";
 

@@ -1,10 +1,8 @@
-import donut from "/donuts/donut.png"
-import donut1 from "/donuts/donut1.png"
-import donut2 from "/donuts/donut2.png"
-import donut3 from "/donuts/donut3.png"
-import donut4 from "/donuts/donut4.png"
-
-
+import donut from "./donuts/donut.png"
+import donut1 from "./donuts/donut1.png"
+import donut2 from "./donuts/donut2.png"
+import donut3 from "./donuts/donut3.png"
+import donut4 from "./donuts/donut4.png"
 
 const donuts = [
     {
