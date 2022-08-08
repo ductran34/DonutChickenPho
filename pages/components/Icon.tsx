@@ -1,14 +1,12 @@
 import React, { Dispatch, SetStateAction, useEffect, useState } from 'react'
-import icon_1 from "../../data/assert/icons/icon_1.png";
-import icon_2 from "../../data/assert/icons/icon_2.png";
-import icon_3 from "../../data/assert/icons/icon_3.png";
-import icon_4 from "../../data/assert/icons/icon_4.png";
-import icon_5 from "../../data/assert/icons/icon_5.png";
-import icon_6 from "../../data/assert/icons/icon_6.png";
-import icon_7 from "../../data/assert/icons/icon_7.png";
-import icon_8 from "../../data/assert/icons/icon_8.png";
-
-
+import icon_1 from "../../data/icons/icon_1.png";
+import icon_2 from "../../data/icons/icon_2.png";
+import icon_3 from "../../data/icons/icon_3.png";
+import icon_4 from "../../data/icons/icon_4.png";
+import icon_5 from "../../data/icons/icon_5.png";
+import icon_6 from "../../data/icons/icon_6.png";
+import icon_7 from "../../data/icons/icon_7.png";
+import icon_8 from "../../data/icons/icon_8.png";
 
 const Icon = ({ type, selectedCategory, setSelectedCategory }: {type: string, selectedCategory? : string, setSelectedCategory: Dispatch<SetStateAction<string>>}) => {
     
