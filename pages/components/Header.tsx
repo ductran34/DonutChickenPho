@@ -2,7 +2,7 @@ import Image from 'next/image'
 import { useEffect, useState } from 'react'
 import Link from 'next/link'
 import styled from 'styled-components';
-
+import logo from '../../data/logo.png'
 export interface INavProps {
   variant?: "primary" | "secondary";
   scrollNav: boolean;
@@ -17,11 +17,11 @@ const Nav = styled.nav.attrs<Pick<INavProps, "scrollNav">>(
   height: 5rem;
   width: 100%;
   padding: 0 1.5rem;
-  background: ${(props) => (props?.scrollNav === false ? "#1E283E" : "#fb4959")};
+  background: ${(props) => (props?.scrollNav === false ? "#transparent" : "#1E283E")};
   display: flex;
   justify-content: space-between;
   align-items: center;
-  color: ${(props) => (props?.scrollNav === false ? "#eae7dd" : "#16202a")};
+  /* color: ${(props) => (props?.scrollNav === false ? "#1E283E" : "#eae7dd")}; */
   z-index: 99;
 `;
 
@@ -33,7 +33,7 @@ const StyledLink = styled.div.attrs<Pick<INavProps, "scrollNav">>(
   padding: 0rem 2rem;
   cursor: pointer;
   font-weight: 600;
-  color: ${(props) => (props?.scrollNav === false ? "#eae7dd" : "#16202a")};
+  /* color: ${(props) => (props?.scrollNav === false ? "#16202a" : "#eae7dd")}; */
   :hover {
     color: ${(props) => (props?.scrollNav === false ? "#fb4959" : "#eae7dd")};;
   }
@@ -94,24 +94,23 @@ function Header() {
     <Nav scrollNav={isScrolled}>
       <div>
         <Link href='/' passHref>
-          <StyledLink scrollNav={isScrolled}>NXT</StyledLink>
+          <StyledLink scrollNav={isScrolled}>
+            <img className='w-[5rem]' src={logo.src} />
+          </StyledLink>
         </Link>
       </div>
-      <div className={"flex"}>
+      <div  className="flex text-[#e7eaf2] md:text-[#1E283E]">
         <Link href='/mouse' passHref>
-          <StyledLink scrollNav={isScrolled}>Mouse</StyledLink>
+          <StyledLink scrollNav={isScrolled}>Menu</StyledLink>
         </Link>
         <Link href='/keyboard' passHref>
-          <StyledLink scrollNav={isScrolled}>Keyboard</StyledLink>
+          <StyledLink scrollNav={isScrolled}>Offers</StyledLink>
         </Link>
         <Link href='/headsets' passHref>
-          <StyledLink scrollNav={isScrolled}>Headsets</StyledLink>
-        </Link>
-        <Link href='/mousepads' passHref>
-          <StyledLink scrollNav={isScrolled}>Mousepads</StyledLink>
+          <StyledLink scrollNav={isScrolled}>Location</StyledLink>
         </Link>
       </div>
-      <div className={"flex "}>
+      {/* <div className={"flex "}>
         <Link href='/cartPage' passHref>
           <div className={"flex items-center"}>
             <Circle scrollNav={isScrolled}>3</Circle>
@@ -119,17 +118,17 @@ function Header() {
           </div>
         </Link>
         <div className={"border border-solid border-gray-400 mx-4"}></div>
-        {/* <div className={"flex items-center"}>
+        <div className={"flex items-center"}>
           <Circle scrollNav={isScrolled}>3</Circle>
           <Text scrollNav={isScrolled}>Chris Tran</Text>
-        </div> */}
+        </div>
         <Link href='/authenticationPage' passHref>
           <div className={`flex items-center border-2 cursor-pointer border-solid ${!isScrolled ? 'border-[#fb4959] bg-[#fb495970]' : 'border-[#eae7dd] bg-[#c5c5c586]'}  py-1 px-2 hover:bg-[#fb4959]`}>
             BUY NOW
           </div>
         </Link>
 
-      </div>
+      </div> */}
     </Nav>
   )
 }
